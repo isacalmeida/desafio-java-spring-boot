@@ -1,10 +1,10 @@
-DROP schema public cascade;
+DROP SCHEMA public;
 
-CREATE schema public;
+CREATE SCHEMA public;
 -- -----------------------------------------------------
 -- Table Pessoa
 -- -----------------------------------------------------
-/* CREATE TABLE pessoa(
+CREATE TABLE pessoa(
 id bigserial NOT NULL,
 nome character varying(100) NOT NULL,
 data_nascimento date,
@@ -46,4 +46,4 @@ ON UPDATE NO ACTION ON DELETE NO ACTION,
 CONSTRAINT fk_pessoa FOREIGN KEY (idpessoa)
 REFERENCES pessoa (id) MATCH SIMPLE
 ON UPDATE NO ACTION ON DELETE NO ACTION
-); */
+);

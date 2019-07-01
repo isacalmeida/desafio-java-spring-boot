@@ -8,10 +8,10 @@ spring:
   datasource:
     continue-on-error: true
     data: classpath:/data.sql
-    driverClassName: org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver
     initialization-mode: always
     password: desafio
-    platform: postgres
+    platform: postgresql
     #schema: classpath:/schema.sql
     url: jdbc:postgresql://dbdesk.ci347vo4wg5v.us-east-2.rds.amazonaws.com:5432/desafio
     username: desafio
